@@ -4,14 +4,14 @@ pygame.init()
 
 screen = pygame.display.set_mode((620, 578))
 # pygame.display.set_icon()
-imgx = pygame.image.load("images\\img_x.png")
-imgo = pygame.image.load("images\\img_o.png")
-imgg = pygame.image.load("images\\grid2.png")
-imgover = pygame.image.load("images\\game_over1.jpg")
+imgx = pygame.image.load("img_x.png")
+imgo = pygame.image.load("img_o.png")
+imgg = pygame.image.load("grid2.png")
+# imgover = pygame.image.load("images\\game_over1.jpg")
 pygame.display.set_caption("TICTACTOE")
-win_x = pygame.image.load("images\\win_x.jpg")
-win_o = pygame.image.load("images\\win_o.jpg")
-win_t = pygame.image.load("images\\win_t.jpg")
+win_x = pygame.image.load("win_x.jpg")
+win_o = pygame.image.load("win_o.jpg")
+win_t = pygame.image.load("win_t.jpg")
 Running = True
 
 box1 = pygame.Rect(63,46,155,151)
@@ -35,8 +35,6 @@ def wl(a, b, c, d, e, f, g, h, i):
     elif d == e == f == 2 or d == e == f == 1:
         return True
     elif g == h == i == 2 or g == h == i == 1:
-        return True
-    elif a == b == c == 2 or a == b == c == 1:
         return True
     elif a == d == g == 2 or a == d == g == 1:
         return True
