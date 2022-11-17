@@ -4,14 +4,14 @@ pygame.init()
 
 screen = pygame.display.set_mode((620, 578))
 # pygame.display.set_icon()
-imgx = pygame.image.load("img_x.png")
-imgo = pygame.image.load("img_o.png")
-imgg = pygame.image.load("grid2.png")
-# imgover = pygame.image.load("images\\game_over1.jpg")
+imgx = pygame.image.load("images\\img_x.png")
+imgo = pygame.image.load("images\\img_o.png")
+imgg = pygame.image.load("images\\grid2.png")
+imgover = pygame.image.load("images\\game_over1.jpg")
 pygame.display.set_caption("TICTACTOE")
-win_x = pygame.image.load("win_x.jpg")
-win_o = pygame.image.load("win_o.jpg")
-win_t = pygame.image.load("win_t.jpg")
+win_x = pygame.image.load("images\\win_x.jpg")
+win_o = pygame.image.load("images\\win_o.jpg")
+win_t = pygame.image.load("images\\win_t.jpg")
 Running = True
 
 box1 = pygame.Rect(63,46,155,151)
@@ -62,81 +62,81 @@ while Running:
             if pygame.mouse.get_pressed()[2]:
                 pos = pygame.mouse.get_pos()
                 if box1.collidepoint(pos):
-                    if x % 2 == 0 and a != 2:
+                    if x % 2 == 0 and a == 0:
                         a = 1
                         x += 1
-                    if x % 2 != 0 and a != 1:
+                    if x % 2 != 0 and a == 0:
                         a = 2
                         x += 1
 
                 if box2.collidepoint(pos):
-                    if x % 2 == 0 and b != 2:
+                    if x % 2 == 0 and b == 0:
                         b = 1
                         x += 1
 
-                    if x % 2 != 0 and b != 1:
+                    if x % 2 != 0 and b == 0:
                         b = 2
                         x += 1
 
                 if box3.collidepoint(pos):
-                    if x % 2 == 0 and c != 2:
+                    if x % 2 == 0 and c == 0:
                         c = 1
                         x += 1
 
-                    if x % 2 != 0 and c != 1:
+                    if x % 2 != 0 and c == 0:
                         c = 2
                         x += 1
                 if box4.collidepoint(pos):
-                    if x % 2 == 0 and d != 2:
+                    if x % 2 == 0 and d == 0:
                         d = 1
                         x += 1
 
-                    if x % 2 != 0 and d != 1:
+                    if x % 2 != 0 and d == 0:
                         d = 2
                         x += 1
 
                 if box5.collidepoint(pos):
-                    if x % 2 == 0 and e != 2:
+                    if x % 2 == 0 and e == 0:
                         e = 1
                         x += 1
 
-                    if x % 2 != 0 and e != 1:
+                    if x % 2 != 0 and e == 0:
                         e = 2
                         x += 1
 
                 if box6.collidepoint(pos):
-                    if x % 2 == 0 and f != 2:
+                    if x % 2 == 0 and f == 0:
                         f = 1
                         x += 1
 
-                    if x % 2 != 0 and f != 1:
+                    if x % 2 != 0 and f == 0:
                         f = 2
                         x += 1
 
                 if box7.collidepoint(pos):
-                    if x % 2 == 0 and g != 2:
+                    if x % 2 == 0 and g == 0:
                         g = 1
                         x += 1
 
-                    if x % 2 != 0 and g != 1:
+                    if x % 2 != 0 and g == 0:
                         g = 2
                         x += 1
 
                 if box8.collidepoint(pos):
-                    if x % 2 == 0 and h != 2:
+                    if x % 2 == 0 and h == 0:
                         h = 1
                         x += 1
 
-                    if x % 2 != 0 and h != 1:
+                    if x % 2 != 0 and h == 0:
                         h = 2
                         x += 1
 
                 if box9.collidepoint(pos):
-                    if x % 2 == 0 and i != 2:
+                    if x % 2 == 0 and i == 0:
                         i = 1
                         x += 1
 
-                    if x % 2 != 0 and i != 1:
+                    if x % 2 != 0 and i == 0:
                         i = 2
                         x += 1
 
