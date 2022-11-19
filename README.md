@@ -1,1 +1,1 @@
-# TicTacToe : This tictactoe game is made using pygame module and is very interesting to play so download the code and try it yourself.
+This is a very popular game also known as XO and it is built using pygame module in PYTHON.
